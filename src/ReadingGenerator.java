@@ -44,7 +44,7 @@ public class ReadingGenerator {
                     }
 
                     List<String> diag = Arrays.asList(
-                            types[i], //title
+                            types[i], // type
                             data, // values read
                             randomTime()); // timestamp
                     csvWriter.append(String.join(",", diag));

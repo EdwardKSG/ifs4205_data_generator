@@ -63,7 +63,7 @@ public class ImageGenerator {
                     }
 
                     List<String> diag = Arrays.asList(
-                            types[i], //title
+                            types[i], // type
                             title, // title
                             randomTime()); // timestamp
                     csvWriter.append(String.join(",", diag));

@@ -32,7 +32,7 @@ public class ReadingGenerator {
                     switch (i) {
                         case 0: // blood pressure
                             int high = (new Random().nextInt(100)) + 75; // 75 to 174
-                            int low = (int)((high * 0.6) + new Random().nextInt(11)); // hight * 0.6 + [0, 10]
+                            int low = (int)((high * 0.6) + new Random().nextInt(11)); // high * 0.6 + [0, 10]
                             data = high + "/" + low;
                             break;
                         case 1: // heart rate
@@ -45,8 +45,8 @@ public class ReadingGenerator {
 
                     List<String> diag = Arrays.asList(
                             types[i], //title
-                            data, // time_start
-                            randomTime()); // time_end
+                            data, // values read
+                            randomTime()); // timestamp
                     csvWriter.append(String.join(",", diag));
                     csvWriter.append("\n");
 

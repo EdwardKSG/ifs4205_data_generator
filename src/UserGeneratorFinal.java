@@ -111,11 +111,11 @@ public class UserGeneratorFinal {
             csvWriter.append(",");
             csvWriter.append("email");
             csvWriter.append(",");
-            csvWriter.append("contact_number");
+            csvWriter.append("contactnumber");
             csvWriter.append(",");
             csvWriter.append("address");
             csvWriter.append(",");
-            csvWriter.append("postal_code");
+            csvWriter.append("postalcode");
             csvWriter.append(",");
             csvWriter.append("password");
             csvWriter.append("\n");
@@ -186,7 +186,7 @@ public class UserGeneratorFinal {
         int n = (new Random().nextInt(5)) + 16; // [16, 20]
         // range of characters in a hex string
         String chars = "01234567890123456789" + "abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                + "~!@#$%^&*()_+`-=" + ",.<>?/" + ";:'[]{}|";
+                + "~!@#$%^&*()_+`-=" + ".<>?/" + ";:'[]{}|";
 
         // create StringBuffer
         StringBuilder sb = new StringBuilder(n);
